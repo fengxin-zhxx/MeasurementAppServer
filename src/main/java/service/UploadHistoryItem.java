@@ -32,7 +32,7 @@ public class UploadHistoryItem extends HttpServlet {
 
         try {
             boolean flag = HistoryItemDao.addHistoryItem(historyItem);
-            if (flag) System.out.println("add historyItem succ" + historyItem);
+            if (flag) System.out.println("add historyItem succ " + jsonObject);
             else System.out.println("add historyItem failed.");
         } catch (SQLException e) {
             e.printStackTrace();

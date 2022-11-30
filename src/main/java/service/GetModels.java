@@ -33,7 +33,7 @@ public class GetModels extends HttpServlet {
 //        String id = (String) jsonObject.get("uid");
 //        if (id == null) return;
 
-        resp.setContentType("text/html;charset=UTF-8");
+        resp.setContentType("text/html;charset=GBK");
         String id = req.getParameter("uid");
 
         ModelDao modelDao = new ModelDao();
